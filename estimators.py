@@ -1,6 +1,6 @@
 import numpy as np
 
-from simulation.scenario import get_F, get_Q, get_R, tdoa_jac, tdoa_meas
+from scenario import get_F, get_Q, get_R, tdoa_jac, tdoa_meas
 
 
 def sym(A):

@@ -1,18 +1,10 @@
-import sys
 import time
-from pathlib import Path
-
 import numpy as np
 
-if __package__ in (None, ""):
-    root = Path(__file__).resolve().parents[1]
-    if str(root) not in sys.path:
-        sys.path.insert(0, str(root))
-
-from simulation.config import default_config
-from simulation.estimators import run_ekf, run_erts, run_ukf, run_urts
-from simulation.plotting import plot_geometry, plot_rmse, plot_single_run
-from simulation.scenario import simulate_trial
+from config import default_config
+from estimators import run_ekf, run_erts, run_ukf, run_urts
+from plotting import plot_geometry, plot_rmse, plot_single_run
+from scenario import simulate_trial
 
 
 labels = {
